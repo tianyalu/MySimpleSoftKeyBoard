@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/keyboard_blackground"
+    android:paddingTop="2px"
+    android:visibility="gone">
+
+    <com.sty.learn.view.SoftkeyboardSimpleStyle
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:keyBackground="@drawable/my_keyboard_general"
+        android:keyTextColor="@android:color/black"
+        android:keyTextSize="28dp"
+        android:labelTextSize="20dp"
+        android:shadowColor="@android:color/transparent"
+        android:shadowRadius="0.0"/>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Codes:代表按键对应的输出值，可以为Unicode值或以“,"分割的多个值，也可以为一个字符串
+    Codes通常用来定义该键的键码，如数字键1对应的49；若是“,”分割的多个值则和普通手机输入键盘
+    一样在多个值之间切换-->
+<!--keyLabel:代表按键显示的文本内容-->
+<!--keyIcon:代表按键显示的图标内容，如果指定了该值在显示时只显示图片，不显示文本-->
+<!--keyWidth:代表按键的宽度，可以为精确值或相对值，对于精确值支持多种单位，如：像素、英寸等；
+    相对值为相对于基础取值的百分比，为以%或%p结尾，其中%p表示相对于父容器。-->
+<!--keyHeight:代表按键的高度，取值同上-->
+<!--horizontalGap:代表按键前的间隙（水平方向）-->
+<!--isSticky:指定按键是否为sticky的。例如Shift大小写切换按键，具有两种状态，按下状态
+    和正常状态分别取值为true和false-->
+<!--isModifier:指定按键是否为功能键，例如Alt或者Shift。取值为true或者false-->
+<!--keyOutputText:指定按键输出的文本内容，取值为字符串-->
+<!--isRepeatable:指定按键是否为可重复的，如果长按该按键可以触发重复按键事件则为true,否则false-->
+<!--keyEdgeFlags:指定按键的对齐指令，取值为left或者right-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="2.7%p"
+    android:keyHeight="21.72%p"
+    android:keyWidth="22.25%p"
+    android:verticalGap="3.28%p">
+
+    <Row>
+        <Key
+            android:codes="49"
+            android:horizontalGap="0dp"
+            android:keyLabel="1"/>
+        <Key
+            android:codes="50"
+            android:keyLabel="2"/>
+        <Key
+            android:codes="51"
+            android:keyLabel="3"/>
+        <Key
+            android:codes="57418"/>
+    </Row>
+    <Row>
+        <Key
+            android:codes="52"
+            android:horizontalGap="0dp"
+            android:keyLabel="4"/>
+        <Key
+            android:codes="53"
+            android:keyLabel="5"/>
+        <Key
+            android:codes="54"
+            android:keyLabel="6"/>
+        <Key
+            android:codes="-5"
+            android:isRepeatable="true"/>
+    </Row>
+    <Row>
+        <Key
+            android:codes="55"
+            android:horizontalGap="0dp"
+            android:keyLabel="7"/>
+        <Key
+            android:codes="56"
+            android:keyLabel="8"/>
+        <Key
+            android:codes="57"
+            android:keyLabel="9"/>
+        <Key
+            android:codes="57420"
+            android:keyEdgeFlags="right"
+            android:keyHeight="43.43%p"/>
+    </Row>
+    <Row>
+        <Key
+            android:codes="57419"
+            android:horizontalGap="0dp"
+            android:keyEdgeFlags="left"
+            android:keyLabel="000"/>
+        <Key
+            android:codes="57421"
+            android:keyLabel="00"/>
+        <Key
+            android:codes="48"
+            android:keyLabel="0"/>
+    </Row>
+</Keyboard>

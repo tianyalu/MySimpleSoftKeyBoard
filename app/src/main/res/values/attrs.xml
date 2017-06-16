@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <declare-styleable name="MyEditText">
+        <attr name="enableAlpha" format="boolean"/>
+        <attr name="keyboardType">
+            <enum name="A920_SIMPLE" value="0"/>
+            <enum name="A920_COLOR" value="1"/>
+            <enum name="A920_COLOR_SWIP" value="2"/>
+            <enum name="D800_PIN" value="3"/>
+            <enum name="D800_SWIP" value="4"/>
+            <enum name="D800_BLANK" value="5"/>
+        </attr>
+    </declare-styleable>
+</resources>
